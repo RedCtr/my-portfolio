@@ -3,11 +3,7 @@ import React from 'react'
 import NavItem from './NavItem'
 import ThemeSwitcher from './ThemeSwitcher'
 import Link from 'next/link'
-
-type NavItemType = {
-    text: string,
-    href: string
-}
+import MobileNavigation from './MobileNavigation'
 
 const navItems: NavItemType[] = [
     {
@@ -32,7 +28,7 @@ const Navigation = () => {
     return (
 
         <header className='flex items-center justify-between max-w-3xl w-full
-        mx-auto text-gray-100 bg-gray-900 bg-opacity-40 pt-7 pb-7 sm:py-10 sm:pb-10'>
+        mx-auto text-gray-100 bg-gray-900 bg-opacity-40 px-8 pt-7 pb-7 sm:py-10 sm:pb-10'>
 
             <Link href='/' className='relative w-[27px] h-[30px] sm:w-[40px] sm:h-[44px]'>
                 <Image
@@ -46,17 +42,23 @@ const Navigation = () => {
 
             </Link>
 
-            <nav className='flex items-center gap-x-8'>
-                <ul className='flex items-center gap-x-2'>
+            <nav className='flex items-center gap-x-3 sm:gap-x-8'>
+                <ul className='hidden sm:flex items-center gap-x-2'>
 
                     {navItems.map((item) => (
-                        <NavItem text={item.text} href={item.href} />
+                        <NavItem key={item.text} text={item.text} href={item.href} />
                     ))}
                 </ul>
 
                 <ThemeSwitcher />
+                <div className='flex sm:hidden'>
+
+                    <MobileNavigation items={navItems} />
+                </div>
 
             </nav>
+
+
 
         </header>
     )
