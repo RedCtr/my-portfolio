@@ -1,10 +1,16 @@
 import Navigation from '@/components/Navigation'
-import './globals.css'
+import '@/styles/globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { IBM_Plex_Sans } from 'next/font/google'
 import ThemeProvider from '@/components/ThemeProvider'
+import { FooterTwo } from '@/components/FooterTwo'
+import { NavigationTwo } from '@/components/NavigationTwo'
 
-const inter = Inter({ subsets: ['latin'] })
+const Ibm = IBM_Plex_Sans({
+  subsets: ['greek'],
+  weight: ['400', '500', '700'],
+  variable: '--font-Ibm'
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,16 +24,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning >
-      <body className={`${inter.className}`}>
+      <body className={`${Ibm.variable} font-Ibm bg-white`}>
         <ThemeProvider>
-          <div className=' bg-gray-900'>
-            <Navigation />
+          {/* <Navigation /> */}
+          <NavigationTwo />
 
-            <div className='max-w-3xl'>
-              {children}
-            </div>
-
+          <div className='max-w-4xl mx-auto mt-16 antialiased'>
+            {children}
           </div>
+
+          <FooterTwo />
+
 
         </ThemeProvider>
       </body>

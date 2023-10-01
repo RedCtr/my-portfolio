@@ -11,10 +11,9 @@ import { Bars3Icon } from '@heroicons/react/24/solid'
 const MobileNavigation = ({ items }: { items: NavItemType[] }) => {
     return (
         <DropdownMenu>
-            <DropdownMenuTrigger>
+            <DropdownMenuTrigger asChild>
                 <button className='flex items-center justify-center rounded-lg p-1 w-9 h-9 
-                bg-gray-700 transition duration-300 hover:bg-gray-600 
-                hover:ring-2 hover:ring-gray-300'>
+                border border-gray-700 transition duration-300 hover:bg-gray-600 focus:border-gray-400'>
                     <Bars3Icon className='w-6 h-6 text-white' />
 
                 </button>
