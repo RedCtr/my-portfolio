@@ -1,7 +1,7 @@
 import Navigation from '@/components/Navigation'
 import '@/styles/globals.css'
 import type { Metadata } from 'next'
-import { IBM_Plex_Sans } from 'next/font/google'
+import { IBM_Plex_Sans, Inter } from 'next/font/google'
 import ThemeProvider from '@/components/ThemeProvider'
 import { FooterTwo } from '@/components/FooterTwo'
 import { NavigationTwo } from '@/components/NavigationTwo'
@@ -10,6 +10,12 @@ const Ibm = IBM_Plex_Sans({
   subsets: ['greek'],
   weight: ['400', '500', '700'],
   variable: '--font-Ibm'
+})
+
+const Interf = Inter({
+  weight: ['400', '500', '700'],
+  subsets: ['latin'],
+  variable: '--font-Inter'
 })
 
 export const metadata: Metadata = {
@@ -24,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning >
-      <body className={`${Ibm.variable} font-Ibm bg-white`}>
+      <body className={`${Ibm.variable} ${Interf.variable} font-Inter bg-white`}>
         <ThemeProvider>
           {/* <Navigation /> */}
           <NavigationTwo />

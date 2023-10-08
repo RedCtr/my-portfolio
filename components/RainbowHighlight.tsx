@@ -11,6 +11,10 @@ export const RainbowHighlight = ({
   // Change the animation duration depending on length of text we're animating (speed = distance / time)
   const animationDuration = Math.floor(30 * children.length)
 
+  // type="underline" 
+  // show={isHovered}
+  // strokeWidth={2}
+
   return (
     <RoughNotation
       type="highlight"

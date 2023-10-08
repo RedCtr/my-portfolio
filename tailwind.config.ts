@@ -132,6 +132,7 @@ const config: Config = {
       },
       fontFamily: {
         Ibm: ['var(--font-Ibm)'],
+        Inter: ['var(--font-Inter)'],
       },
       dropShadow: {
         '4xl': [

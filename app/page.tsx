@@ -2,6 +2,9 @@ import { BlogPreview } from '@/components/BlogPreview'
 import { About } from '@/components/HeroDelba'
 import HeroSection from '@/components/HeroSection'
 import { Projects } from '@/components/Projects'
+import { Contact } from '@/components/sections/Contact'
+import { Skills } from '@/components/sections/Skills'
+import { Words } from '@/components/sections/Words'
 import { getAllPostsMeta } from '@/lib/mdx'
 import { PostMeta } from '@/types/post'
 
@@ -43,6 +46,18 @@ export default async function Home() {
 
       <div id="projects">
         <Projects projects={projects} />
+      </div>
+
+      <div id='skills'>
+        <Skills />
+      </div>
+
+      <div id='testimonials'>
+        <Words />
+      </div>
+
+      <div id='contactMe'>
+        <Contact />
       </div>
     </main>
   )

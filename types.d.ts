@@ -1,4 +1,5 @@
 declare module "react-rough-notation"
+declare module "emoji-unicode"
 
 type NavItemType = {
     text: string,
