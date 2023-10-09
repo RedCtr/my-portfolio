@@ -4,6 +4,7 @@ import { shuffleArray } from "@/lib/shuffleArray"
 import { useIsFontReady } from "@/lib/useIsFontReady"
 // @ts-ignore
 import delbaImg from "@/public/delba.jpg"
+import ghostImg from "@/public/ghost.jpg"
 import Image from "next/image"
 import React from "react"
 import { RoughNotationGroup } from "react-rough-notation"
@@ -73,7 +74,7 @@ export const About = () => {
                             <p className="mt-2">
                                 Let's hang out on{" "}
                                 <a
-                                    href="https://twitter.com/delba_oliveira"
+                                    href="https://twitter.com/Ridouan54968047"
                                     className={cx(
                                         "font-bold transition-colors hover:text-sky-500",
                                         FOCUS_VISIBLE_OUTLINE,
@@ -90,7 +91,7 @@ export const About = () => {
 
                 <div className="flex-shrink-0 mt-12 lg:px-4 lg:mt-0">
                     <Image
-                        src={delbaImg}
+                        src={ghostImg}
                         alt="Profile"
                         placeholder="blur"
                         priority={true}

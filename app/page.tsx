@@ -43,9 +43,9 @@ export default async function Home() {
         <Skills />
       </div>
 
-      <div id='testimonials'>
+      {/* <div id='testimonials'>
         <Words />
-      </div>
+      </div> */}
 
       <div id='contactMe'>
         <Contact />
