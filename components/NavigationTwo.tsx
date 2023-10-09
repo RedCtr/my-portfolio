@@ -14,7 +14,7 @@ export const NavigationTwo = () => {
                         FOCUS_VISIBLE_OUTLINE,
                     )}
                     href="/">
-                    Delba de Oliveira
+                    Redouane de Ctr
 
                 </Link>
 
@@ -60,7 +60,7 @@ export const NavigationTwo = () => {
 
                     <p className="flex pl-6 space-x-3 text-xl">
                         <a
-                            href="https://twitter.com/delba_oliveira"
+                            href="https://twitter.com/Ridouan54968047"
                             className={cx(
                                 "transition-colors text-gray-900 hover:text-sky-500 cursor-pointer",
                                 FOCUS_VISIBLE_OUTLINE,
@@ -70,7 +70,7 @@ export const NavigationTwo = () => {
                             <AiOutlineTwitter></AiOutlineTwitter>
                         </a>
                         <a
-                            href="https://github.com/delbaoliveira"
+                            href="https://github.com/redctr"
                             className={cx(
                                 "transition-colors text-gray-900 hover:text-sky-500 cursor-pointer",
                                 FOCUS_VISIBLE_OUTLINE,
