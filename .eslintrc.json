@@ -1,0 +1,16 @@
+{
+  "extends": "next",
+  "rules": {
+    "react/prop-types": 0,
+    "react/no-unescaped-entities": 0,
+    "import/no-unresolved": [
+      2,
+      {
+        "ignore": [
+          "contentlayer/generated",
+          "next-contentlayer/hooks"
+        ]
+      }
+    ]
+  }
+}
