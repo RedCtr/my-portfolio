@@ -14,7 +14,7 @@ export const NavigationTwo = () => {
                         FOCUS_VISIBLE_OUTLINE,
                     )}
                     href="/">
-                    Redouane de Ctr
+                    Redouane Ctr
 
                 </Link>
 
@@ -58,7 +58,20 @@ export const NavigationTwo = () => {
 
                     </Link>
 
-                    <p className="flex pl-6 space-x-3 text-xl">
+                    <Link
+                        className={cx(
+                            "font-medium block transition-colors mt-1.5 lg:mt-0 lg:ml-8 ml-5 hover:text-sky-500",
+                            FOCUS_VISIBLE_OUTLINE,
+                        )}
+                        href="/#contactMe">
+
+
+
+                        Contact
+
+                    </Link>
+
+                    <p className=" hidden pl-6 space-x-3 text-xl">
                         <a
                             href="https://twitter.com/Ridouan54968047"
                             className={cx(

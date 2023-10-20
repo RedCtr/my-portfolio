@@ -50,13 +50,13 @@ export default async function PostPage({ params }: ParamsProps) {
             <div className="flex items-center mt-4 space-x-2 text-gray-500">
                 <Image
                     alt=""
-                    src="/avatar.jpg"
-                    height={24}
-                    width={24}
+                    src="/avatar.png"
+                    height={25}
+                    width={25}
                     className="rounded-full"
                 />
 
-                <div>Delba de Oliveira</div>
+                <div>Redouane Ctr</div>
 
                 <div className="text-gray-300">&middot;</div>
 

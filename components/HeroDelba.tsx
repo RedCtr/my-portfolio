@@ -4,13 +4,17 @@ import { shuffleArray } from "@/lib/shuffleArray"
 import { useIsFontReady } from "@/lib/useIsFontReady"
 // @ts-ignore
 import delbaImg from "@/public/delba.jpg"
-import ghostImg from "@/public/ghost.jpg"
+import redImg from "@/public/red1.png"
 import Image from "next/image"
 import React from "react"
 import { RoughNotationGroup } from "react-rough-notation"
 import cx from "clsx"
 import { FOCUS_VISIBLE_OUTLINE } from "@/lib/constants"
 import { RainbowHighlight } from "./RainbowHighlight"
+import Tilt from 'react-parallax-tilt'
+import { Screen } from "./challenge/Screen"
+import { RoughNotation } from "react-rough-notation"
+import { Button } from "@/components/ui/button"
 
 export const About = () => {
     // Before animation, detect if custom fonts are loaded, so <RoughNotation />
@@ -28,81 +32,114 @@ export const About = () => {
     return (
         <div className="container px-4 mx-auto">
             <div className="space-x-5 lg:flex item-center lg:-mx-4">
-                <div className="lg:px-4 ">
+                <div className="lg:px-4 max-w-2xl ">
                     <RoughNotationGroup show={isFontReady}>
                         <h1 className="text-2xl font-bold text-gray-900 lg:text-4xl">
-                            Hi there, I'm Red.
+                            Hi there! I'm Red, an{" "}
+                            <RainbowHighlight color={colors[0]}>
+                                android developer
+                            </RainbowHighlight> {" "}
+                            based in Morocco.
                         </h1>
 
                         <div className="mt-4 text-gray-800">
                             <p>
-                                I love making tools that are user-friendly, simple and
-                                delightful. I work as a{" "}
-                                <RainbowHighlight color={colors[1]}>
-                                    Developer Advocate
-                                </RainbowHighlight>{" "}
-                                at{" "}
-                                <a
-                                    href="https://vercel.com/"
-                                    className={cx(
-                                        "font-bold transition-colors hover:text-sky-500",
-                                        FOCUS_VISIBLE_OUTLINE,
-                                    )}
-                                >
-                                    ▲ Vercel
-                                </a>{" "}
-                                &mdash; focusing on DX and helping the community create
-                                wonderful things.
-                            </p>
-                            <p className="mt-2">
-                                Welcome to my digital garden where I share what I'm learning
-                                about shipping{" "}
-                                <RainbowHighlight color={colors[2]}>
-                                    great products
-                                </RainbowHighlight>
-                                , becoming a{" "}
-                                <RainbowHighlight color={colors[3]}>
-                                    better developer
-                                </RainbowHighlight>{" "}
-                                and growing a{" "}
+                                I love building tools that are {" "}
                                 <RainbowHighlight color={colors[0]}>
-                                    career in tech
+                                    user-friendly, simple
+                                </RainbowHighlight> {" "} and {" "}
+                                <RainbowHighlight color={colors[1]}>
+                                    delightful.
                                 </RainbowHighlight>
-                                .
+
                             </p>
 
                             <p className="mt-2">
-                                Let's hang out on{" "}
-                                <a
-                                    href="https://twitter.com/Ridouan54968047"
-                                    className={cx(
-                                        "font-bold transition-colors hover:text-sky-500",
-                                        FOCUS_VISIBLE_OUTLINE,
-                                    )}
-                                    target="_blank"
-                                >
-                                    Twitter
-                                </a>
-                                .
+                                I'm known for putting in the {" "}
+                                <RainbowHighlight color={colors[1]}>
+                                    hard work
+                                </RainbowHighlight> {" "}, taking pride in delivering {" "}
+                                <strong>high-quality</strong> {" "}
+                                Android apps. No challenge is too big when you're determined to succeed.
                             </p>
+                            <p className="mt-2">
+                                My education in Android development has equipped me with a solid foundation
+                                in software engineering principles, allowing me to bridge the gap between {" "}
+                                <RainbowHighlight color={colors[2]} >
+                                    theory
+                                </RainbowHighlight>{" "} and {" "}
+                                <RainbowHighlight color={colors[3]} >
+                                    real-world application.
+                                </RainbowHighlight>
+
+                            </p>
+                            <p className="mt-2">
+                                {/* As I actively seek new career opportunities, looking for a role as an android developer{" "} */}
+                                I'm currently looking for a role as an android developer.{" "}
+                                <RoughNotation
+                                    type='box'
+                                    multiline={true}
+                                    padding={[0, 2]}
+                                    iterations={2}
+                                    strokeWidth={1}
+                                    animationDuration={200}
+                                    color={colors[0]}>
+                                    <strong>
+                                        {"  "} Hire me? {"  "}
+                                    </strong>
+                                </RoughNotation>
+                            </p>
+
+                            <div className="mt-6 flex items-center gap-x-4">
+                                <a href="https://www.linkedin.com/in/redctr/"
+                                    target="_blank">
+
+                                    <Button className=" w-[170px] rounded-sm" variant='default' >
+                                        View Linkedin
+                                    </Button>
+                                </a>
+                                <a href="https://github.com/redCtr/"
+                                    target="_blank">
+
+                                    <Button className="w-[170px] rounded-sm" variant='outline' >
+                                        View Github
+                                    </Button>
+                                </a>
+
+
+                            </div>
                         </div>
                     </RoughNotationGroup>
                 </div>
 
                 <div className="flex-shrink-0 mt-12 lg:px-4 lg:mt-0">
-                    <Image
-                        src={ghostImg}
-                        alt="Profile"
-                        placeholder="blur"
-                        priority={true}
-                        className="rounded-full"
-                        width={200}
-                        height={200}
-                    />
+                    <Tilt
+                        transitionSpeed={10000}
+                        tiltMaxAngleY={8}
+                        tiltMaxAngleX={8}
+                        scale={1.01}
+                        glareEnable={true}
+                        glareMaxOpacity={0.3}
+                        glareBorderRadius="11px"
+                    >
+                        <div className="rounded-lg w-[260px] h-[370px] relative transition overflow-hidden shadow-xl hover:shadow-2xl cursor-pointer">
+
+                            <Image
+                                className="rounded-lg w-[260px] h-[370px] object-cover aspect-auto"
+                                src={redImg}
+                                alt="Profile"
+                                placeholder="blur"
+                                priority={true}
+                            // width={200}
+                            // height={200}
+                            />
+                        </div>
+
+
+                    </Tilt>
+
                 </div>
             </div>
         </div>
     )
 }
-
-About

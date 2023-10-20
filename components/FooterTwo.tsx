@@ -11,7 +11,7 @@ export const FooterTwo = () => {
                     <p>Built with Tailwind and Next.js 🖤</p>
                     <div className="pt-2 space-x-6 font-medium lg:pt-0">
                         <a
-                            href="https://twitter.com/delba_oliveira"
+                            href="https://twitter.com/Ridouan54968047"
                             className={cx(
                                 "transition-colors hover:text-sky-500 focus:text-sky-500 rounded",
                                 FOCUS_VISIBLE_OUTLINE,
@@ -20,7 +20,7 @@ export const FooterTwo = () => {
                             Twitter
                         </a>
                         <a
-                            href="https://github.com/delbaoliveira"
+                            href="https://github.com/redCtr/"
                             className={cx(
                                 "transition-colors hover:text-sky-500 focus:text-sky-500 rounded",
                                 FOCUS_VISIBLE_OUTLINE,
@@ -29,7 +29,7 @@ export const FooterTwo = () => {
                             Github
                         </a>
                         <a
-                            href="https://www.linkedin.com/in/delbaoliveira/"
+                            href="https://www.linkedin.com/in/redctr/"
                             className={cx(
                                 "transition-colors hover:text-sky-500 focus:text-sky-500 rounded",
                                 FOCUS_VISIBLE_OUTLINE,
@@ -38,9 +38,9 @@ export const FooterTwo = () => {
                             Linkedin
                         </a>
                         <a
-                            href="https://www.instagram.com/delba.oliveira/"
+                            href=""
                             className={cx(
-                                "transition-colors hover:text-sky-500 focus:text-sky-500 rounded",
+                                "hidden transition-colors hover:text-sky-500 focus:text-sky-500 rounded",
                                 FOCUS_VISIBLE_OUTLINE,
                             )}
                         >

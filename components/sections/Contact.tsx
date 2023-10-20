@@ -9,10 +9,10 @@ export const Contact = () => {
       <p className="mt-6 text-gray-800">
         Do you have an idea you'd like to discuss? Feel free to reach me at{" "}
         <a
-          href="mailto:hello@delbaoliveira.com"
+          href="mailto:ridouanechatraoui03@gmail.com"
           className="font-medium transition-colors hover:text-sky-500"
         >
-          hello@delbaoliveira.com
+          ridouanechatraoui03@gmail.com
         </a>
         .
       </p>

@@ -14,27 +14,27 @@ const data: {
   items: { text: string; src?: any }[][]
 }[] = [
     {
-      title: "Design",
+      title: "Android Tech Stack",
       items: [
         [
           {
-            text: "Figma",
+            text: "Jetpack Components",
             src: figmaImg,
           },
         ],
         [
           {
-            text: "Tailwind",
+            text: "Hilt",
           },
         ],
-        [{ text: "Design systems" }],
-        [{ text: "User research" }],
+        [{ text: "Coroutine" }],
+        [{ text: "MVVM & MVI" }],
       ],
     },
     {
       title: "Front-end",
       items: [
-        [{ text: "Accessible HTML" }, { text: "CSS" }],
+        [{ text: "Java" }, { text: "Kotlin" }],
         [
           {
             text: "JavaScript",
@@ -54,20 +54,17 @@ const data: {
           {
             text: "Next.js",
           },
-          {
-            text: "CRA",
-          },
         ],
 
-        [{ text: "CSS-in-JS" }],
+        [{ text: "Tailwind" }],
       ],
     },
     {
       title: "Back-end",
       items: [
         [{ text: "Node.js" }],
-        [{ text: "REST & GraphQL APIs" }],
-        [{ text: "MySQL & PostgreSQL" }],
+        [{ text: "REST APIs" }],
+        [{ text: "MySQL & Sqlite" }],
         [
           {
             text: "Prisma",
@@ -79,6 +76,7 @@ const data: {
     {
       title: "Other",
       items: [
+        [{ text: "Google Play Console" }],
         [
           {
             text: "Vercel",
@@ -86,16 +84,14 @@ const data: {
           {
             text: "AWS",
           },
-          { text: "Heroku" },
         ],
-        [{ text: "Testing (Jest)" }],
         [
           {
-            text: "Zapier & Airtable",
+            text: "PlanetScale",
             src: nocodeImg,
           },
         ],
-        [{ text: "Scrum & Kanban" }],
+        // [{ text: "Firebase & MongoDb" }],
       ],
     },
   ]
