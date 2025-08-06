@@ -3,7 +3,6 @@ import { LIGHT_COLORS } from "@/lib/constants"
 import { shuffleArray } from "@/lib/shuffleArray"
 import { useIsFontReady } from "@/lib/useIsFontReady"
 // @ts-ignore
-import delbaImg from "@/public/delba.jpg"
 import redImg from "@/public/red1.png"
 import Image from "next/image"
 import React from "react"
@@ -35,21 +34,21 @@ export const About = () => {
                 <div className="lg:px-4 max-w-2xl ">
                     <RoughNotationGroup show={isFontReady}>
                         <h1 className="text-2xl font-bold text-gray-900 lg:text-4xl">
-                            Hi there! I'm Red, an{" "}
+                            Hi there! I'm Red, a{" "}
                             <RainbowHighlight color={colors[0]}>
-                                android developer
+                                full stack software developer
                             </RainbowHighlight> {" "}
                             based in Morocco.
                         </h1>
 
                         <div className="mt-4 text-gray-800">
                             <p>
-                                I love building tools that are {" "}
+                                I love building applications that are {" "}
                                 <RainbowHighlight color={colors[0]}>
-                                    user-friendly, simple
+                                    user-friendly, scalable
                                 </RainbowHighlight> {" "} and {" "}
                                 <RainbowHighlight color={colors[1]}>
-                                    delightful.
+                                    performant.
                                 </RainbowHighlight>
 
                             </p>
@@ -60,22 +59,22 @@ export const About = () => {
                                     hard work
                                 </RainbowHighlight> {" "}, taking pride in delivering {" "}
                                 <strong>high-quality</strong> {" "}
-                                Android apps. No challenge is too big when you're determined to succeed.
+                                full stack solutions. From frontend interfaces to backend APIs, no challenge is too big when you're determined to succeed.
                             </p>
                             <p className="mt-2">
-                                My education in Android development has equipped me with a solid foundation
-                                in software engineering principles, allowing me to bridge the gap between {" "}
+                                My experience in full stack development has equipped me with expertise across
+                                the entire technology stack, allowing me to bridge the gap between {" "}
                                 <RainbowHighlight color={colors[2]} >
-                                    theory
+                                    frontend
                                 </RainbowHighlight>{" "} and {" "}
                                 <RainbowHighlight color={colors[3]} >
-                                    real-world application.
+                                    backend development.
                                 </RainbowHighlight>
 
                             </p>
                             <p className="mt-2">
-                                {/* As I actively seek new career opportunities, looking for a role as an android developer{" "} */}
-                                I'm currently looking for a role as an android developer.{" "}
+                                {/* As I actively seek new career opportunities, looking for a role as a full stack developer{" "} */}
+                                I'm currently looking for a role as a full stack developer.{" "}
                                 <RoughNotation
                                     type='box'
                                     multiline={true}
